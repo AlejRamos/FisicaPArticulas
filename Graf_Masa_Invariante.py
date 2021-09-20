@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 datos = np.genfromtxt("https://cernbox.cern.ch/index.php/s/5n2wG7OD7a0wYXX/download", delimiter=",",
                       names=["px","py","pz","E"])
-p_t = np.sqrt((datos["px"]**2)+(datos["py"]**2))
+#p_t = np.sqrt((datos["px"]**2)+(datos["py"]**2))
 
 #plt.hist(p_t)
 
@@ -35,13 +35,13 @@ for i in range(b):
     L = E2 - P2
     M2.append(L)
 
-print(len(H))
+#print(len(H))
 #print(H[500][2])
 
 # np.savetxt("Hcito.txt", H, 
 #             fmt=["%.0f","%.5f","%.5f","%.5f","%.5f","%.5f","%.5f","%.5f","%.5f"],
 #             header="event  px1  py1  pz1  E1  px2 py2  pz2  E2")
 
-print(M2[0])
+#print(M2[0])
 
 plt.hist(np.sqrt(M2), color=(0.4,0.9,0.4))
